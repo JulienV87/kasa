@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 
 
@@ -33,4 +33,36 @@ code {
 
 .logo {
  /* width: 70px; */
+}
+
+
+/*ERROR PAGE*/
+
+.erreur-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height : 100vh;
+
+}
+
+.erreur-404 {
+  margin: 0;
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 288px;
+}
+
+.erreur-texte {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 36px;
+}
+
+.erreur-home{
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration-color: #FF6060;
 }

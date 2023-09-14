@@ -5,6 +5,7 @@ import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Erreur from './components/Erreur';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
