@@ -7,6 +7,8 @@ import Erreur from './components/Erreur';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
           <Route path='/about-us' element={<AboutUs/>} />
           <Route path='*' element={<Erreur/>} />
         </Routes>
+        <Footer />
      </BrowserRouter>
     </>
   );

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Logo from "../logo-kasa.png"
+import Logo from "../assets/logo-kasa.png"
 
 export default function Navbar() {
   return (

@@ -5,8 +5,8 @@ export default function Erreur() {
     <div className="erreur-page">
         <h1 className="erreur-404">404</h1>
         <p className="erreur-texte">Oups! La page que vous demandez n'existe pas.</p>
-    <Link to="/">
-        <p className="erreur-home">Retour à la page d'accueil</p> 
+    <Link to="/" className="erreur-home">
+        Retour à la page d'accueil
     </Link>
     </div>
   )
