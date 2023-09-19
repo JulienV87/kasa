@@ -5,9 +5,9 @@ export default function Navbar() {
   return (
 
     <nav className="navbar">
-        <div>
+        <Link to="/">
             <img src={Logo} alt="logo" className="logo"/>
-        </div>
+        </Link>
         <div>
             <Link to="/" className="menu">Accueil</Link>
             <Link to="/about-us" className="menu">A propos</Link>
