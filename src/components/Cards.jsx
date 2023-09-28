@@ -12,6 +12,10 @@ export default function Cards({title,cover}) {
             <article className='card'> 
              
                 <img className='card-img' src={cover} alt={title}/>
+
+                <div className='card-filter'>
+
+                </div>
                 
                 <div className='card-title'>{title}</div>
 
