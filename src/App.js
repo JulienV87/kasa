@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Erreur from './pages/Error';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Accomodation from './pages/Accomodation';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/accomodation/:id' element={<Accomodation/>} />
           <Route path='/about-us' element={<AboutUs/>} />
           <Route path='*' element={<Erreur/>} />
         </Routes>
