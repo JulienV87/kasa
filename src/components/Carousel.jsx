@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
-import { useParams } from "react-router-dom";
-import DATA from '../assets/data';
 
 
-export default function Carrousel() {//{id,pictures}
+export default function Carrousel({apartment}) {//{id,pictures}
 
   const [index, setIndex] = React.useState(0);
-  const {id} = useParams();
-  const targetApartment = DATA.find((apartment) => apartment.id === id);
+
   const onGoLeft = () => {
     if (index - 1 < 0) {
-      setIndex(DATA.length - 1);
+      setIndex(apartment.pictures.length - 1);
     } else {
       setIndex(index - 1);
     }
   };
 
   const onGoRight = () => {
-    if (index >= DATA.length - 1) {
+    if (index >= apartment.pictures.length - 1) {
       setIndex(0);
     } else {
       setIndex(index + 1);
@@ -25,24 +22,23 @@ export default function Carrousel() {//{id,pictures}
   };
   return (
     <div className="carousel">
-    <div style={{
-          display: "flex",
-          flexDirection: "row",
-          background: "red",
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          transition: "all 1s",
-          transform: `translateX(${index * -100}%)`
-        }}>
-        {targetApartment.pictures.map((picture, loopIndex) => (
+    <div style={{ transform: `translateX(${index * -100}%)`, }} className="carousel-images">
+          
+        {apartment.pictures.map((picture, loopIndex) => (
           <img
             key={`apart-picture--${loopIndex + 1}`}
             src={picture}
-            alt={`${targetApartment.title}-${loopIndex + 1}`}
+            alt={`${apartment.title}-${loopIndex + 1}`}
+            style={{width: "100%", heigh:"100%", objectFit: "cover"}}
           />
         ))}
       </div>
+
+      <div className='display-image-numbers'>
+        <span>{index + 1} / {apartment.pictures.length - 1}</span>
+      </div>
+
+
       <div className="left-arrow" onClick={onGoLeft}>
         <span role="img" aria-label="left">
           ⬅️

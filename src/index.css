@@ -112,6 +112,7 @@ code {
   color: #fff;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 
@@ -128,26 +129,34 @@ code {
 
 .carousel {
   display: flex;
-  width: 500px;
-  height: 300px;
+  width: 1240px;
+  height: 415px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  border-radius: 20px;
+  border-radius: 25px;
   position: relative;
   margin: auto;
   margin-bottom: 60px;
 }
 
-/* .carousel-images {
+.carousel-images {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   transition: all 1s;
-  transform: translateX(index * -100%);
-} */
+}
+
+.display-image-numbers {
+  position: absolute;
+  left : 50%;
+  bottom : 30px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
 
 .left-arrow {
   position: absolute;
@@ -170,6 +179,73 @@ code {
   align-items: center;
   cursor: pointer;
 }
+
+/*------------DESCRIPTION ACCOMODATION----------*/
+
+.container-description-accomodation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 96, 96, 1);
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-right: 40px;
+  ;
+}
+
+.container-title-location {
+  display: flex;
+ flex-direction: column;
+ justify-content: left;
+ align-items: start;
+}
+
+.accomodation-title {
+  font-size: 36px;
+}
+
+.accomodation-location {
+  font-size: 18px;
+}
+
+.accomodation-host {
+  color: rgba(255, 96, 96, 1);
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+/* .container-title-location {
+
+} */
+
+.container-host-picture {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-tag-rate{
+  display: flex;
+  justify-content: space-between;
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.host-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+
+  margin: auto;
+}
+
 
 /*------------ABOUT-US PAGE----------*/
 

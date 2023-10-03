@@ -13,9 +13,7 @@ export default function Home() {
         return (
           <Cards
             key={apartment.id}
-            id={apartment.id}
-            title={apartment.title}
-            cover={apartment.cover}
+            apartment={apartment}
           />
         );
       })}
