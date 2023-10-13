@@ -150,6 +150,7 @@ code {
   flex-direction: row;
   min-width: 100%;
   max-width: 1440px;
+  object-fit: cover;
   height: auto;
   transition: all 1s;
 }
@@ -271,6 +272,7 @@ code {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  /* transition: all 1s; */
 }
 
 .description-collapse-button{
