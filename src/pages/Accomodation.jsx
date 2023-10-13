@@ -8,8 +8,10 @@ import DescriptionAccomodation from '../components/DescriptionAccomodation';
 export default function Accomodation() {
   const {id} = useParams();
   const targetApartment = DATA.find((apartment) => apartment.id === id);
+
   return (
-    <div className="App">
+    <div>
+      
       <Carousel apartment={targetApartment}/>
 
      

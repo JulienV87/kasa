@@ -8,7 +8,7 @@ export default function CollapseButton({title,description}) {
       setIsOpen(!isOpen);
     }
   return (
-    <div className='test'>
+    <div>
        <div className='collapse-container'>
         <button className='collapse-toggle' onClick={toggleCollapse}>{title}
         {isOpen ? ' ⬆️' : ' ⬇️'}

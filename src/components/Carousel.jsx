@@ -29,13 +29,13 @@ export default function Carrousel({apartment}) {//{id,pictures}
             key={`apart-picture--${loopIndex + 1}`}
             src={picture}
             alt={`${apartment.title}-${loopIndex + 1}`}
-            style={{width: "100%", heigh:"100%", objectFit: "cover"}}
+            style={{minWidth: "100%", objectFit: "cover"}}
           />
         ))}
       </div>
 
       <div className='display-image-numbers'>
-        <span>{index + 1} / {apartment.pictures.length - 1}</span>
+        <span>{index + 1} / {apartment.pictures.length}</span>
       </div>
 
 

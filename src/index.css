@@ -18,10 +18,11 @@ code {
 /*---------HEADER--------*/
 
 .navbar {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px;
+  margin: 40px 20px 40px 20px;
 }
 
 .menu {
@@ -37,11 +38,12 @@ code {
  font-size: 48px;
  font-family: Montserrat;
  font-weight: 500;
+
   
 }
 .banner-header {
-  margin: 40px;
-  width: auto;
+  margin: 40px 20px 40px 20px;
+  max-width: 1440px;
   height: 223px;
   background-image: url(./assets/banner-home.jpg);
   background-repeat: no-repeat;
@@ -58,11 +60,12 @@ code {
 /*------------HOME PAGE----------*/
 
 .home-section {
-  margin: 40px;
+  max-width: 1440px;
   background-color:#F6F6F6;
   border-radius: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin: 20px;
 }
 
 /*------------CARDS----------*/
@@ -129,7 +132,7 @@ code {
 
 .carousel {
   display: flex;
-  width: 1240px;
+  max-width: 1440px;
   height: 415px;
   overflow: hidden;
   display: flex;
@@ -138,17 +141,21 @@ code {
   position: relative;
   margin: auto;
   margin-bottom: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .carousel-images {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  min-width: 100%;
+  max-width: 1440px;
   height: auto;
   transition: all 1s;
 }
 
 .display-image-numbers {
+  max-width: 1440px;
   position: absolute;
   left : 50%;
   bottom : 30px;
@@ -183,18 +190,19 @@ code {
 /*------------DESCRIPTION ACCOMODATION----------*/
 
 .container-description-accomodation {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 96, 96, 1);
   font-family: Montserrat;
   font-weight: 500;
-  margin-left: 40px;
-  margin-right: 40px;
-  ;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .container-title-location {
+  max-width: 1440px;
   display: flex;
  flex-direction: column;
  justify-content: left;
@@ -215,17 +223,28 @@ code {
   font-size: 18px;
 }
 
-/* .container-title-location {
-
-} */
+.container-tags-rates {
+  max-width: 1440px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 96, 96, 1);
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .container-host-picture {
+  max-width: 1440px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 .container-tag-rate{
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
 }
@@ -242,56 +261,61 @@ code {
   height: auto;
   border-radius: 50%;
   object-fit: contain;
-
   margin: auto;
+}
+
+.container-collapse-button {
+  max-width: 1440px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-collapse-button{
+  width: 582px;
+  height: 52px;
+  border-radius: 10px;
+  margin-bottom:60px;
 }
 
 
 /*------------ABOUT-US PAGE----------*/
 
-.test2 {
-  height: 100%;
-  padding-bottom: 40px;
-}
+
 
 .collapse-container {
 margin-top : 20px;
 background-color:#F6F6F6;
-width: 70%;
-height: 100%;
-margin : 20px;
+width: 582px;
+margin : auto;
+margin-bottom: 20px;
 
 }
 
 .collapse-toggle {
-  width: 100%;
-  height: 60px;
+  width: 582px;
+  height: 52px;
   color: white;
   font-size: 28px;
   font-family: Montserrat;
   background-color: #FF6060;
   border-radius: 5px;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+ 
 }
 
 .collapse-text {
-  width: 100%;
+  width: auto;
   height: auto;
   color: #FF6060;
   margin: 10px;
+  text-align: justify;
+
 }
 
-.test {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-   
-}
+
 
 
 /*-----------ERROR PAGE------------*/
@@ -328,8 +352,9 @@ margin : 20px;
 
 .footer {
   background-color: black;
-  width: 100%;
+  width: auto;
   height: 209px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,7 +363,6 @@ margin : 20px;
 
 .footer-text {
 color:white;
-
 }
 
 
