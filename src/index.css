@@ -224,6 +224,19 @@ code {
   font-size: 18px;
 }
 
+.accomodation-tags{
+  color: white;
+  background-color: rgba(255, 96, 96, 1);;
+  font-family: Montserrat;
+  font-size: 18px;
+  display: inline;
+  padding: 5px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
 .container-tags-rates {
   max-width: 1440px;
   margin-top: 30px;
@@ -244,10 +257,10 @@ code {
   gap: 20px;
 }
 
-.container-tag-rate{
+.container-tags-rate{
   max-width: 1440px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;             
 }
 
 .host-picture {

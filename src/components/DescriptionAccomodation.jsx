@@ -29,7 +29,15 @@ export default function DescriptionAccomodation({apartment}) {
 
     <div className='container-tags-rates'>
 
-            <div className='accomodation-tags'>{apartment.tags}</div>
+            {/* <div className='accomodation-tags'>{apartment.tags}</div> */}
+
+            <div>
+							{apartment.tags.map((tag, index) => {
+								return (
+									<button className='accomodation-tags' key={index}>{tag}</button>
+								)
+							})}
+						</div>
 
             <div>
 					{[...Array(5)].map((star, index) => {
