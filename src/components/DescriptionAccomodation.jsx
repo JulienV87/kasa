@@ -1,11 +1,13 @@
 import React from 'react'
 import CollapseButton from './CollapseButton'
+import RedStar from '../assets/star-active.png'
+import GreyStar from '../assets/star-unactive.png'
+
 
 export default function DescriptionAccomodation({apartment}) {
 
-
-
-
+    // const rating = apartment.rating;
+  
   return (
     <div>
 
@@ -28,8 +30,15 @@ export default function DescriptionAccomodation({apartment}) {
     <div className='container-tags-rates'>
 
             <div className='accomodation-tags'>{apartment.tags}</div>
-        
-            <div className='accomodation-rates'>{apartment.rating}</div>
+
+            <div>
+					{[...Array(5)].map((star, index) => {
+						const ratingValue = index + 1;
+					return (
+							<img key={index} src={ratingValue <= apartment.rating ? RedStar : GreyStar} alt="star" />
+								)
+							})}
+			</div>
 
     </div>
 
