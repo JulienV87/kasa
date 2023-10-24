@@ -290,14 +290,13 @@ code {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* transition: all 1s; */
 }
 
 .description-collapse-button{
   width: 582px;
   height: 52px;
   border-radius: 10px;
-  margin-bottom:60px;
+  margin-bottom:20px;
 }
 
 
@@ -362,13 +361,15 @@ box-sizing: border-box;
 }
 
 .accordion {
-  width: 582px;
+  max-width: 1023px;
   color: white;
   font-size: 28px;
   font-family: Montserrat;
   background-color: #FF6060;
   border-radius: 10px;
   overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .accordion .title {
@@ -387,12 +388,12 @@ box-sizing: border-box;
   color: #FF6060;
   font-family: Montserrat;
   font-size: 18px;
- 
+
 }
 
 .accordion .description .wrapper {
 background-color:#F6F6F6;
-width: 582px;
+/* width: 1023px; */
 margin : auto;
 border-radius: 0 0 10px 10px;
 overflow: hidden;
@@ -401,6 +402,7 @@ box-sizing: border-box;
 }
 
 .accordion .description .wrapper div {
+  min-width: 562px;;
   padding: 20px;
 }
 
