@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import arrowLeft from '../assets/Arrow-Left.png'
+import arrowRight from '../assets/Arrow-Right.png'
 
 
 export default function Carrousel({apartment}) {//{id,pictures}
@@ -40,15 +42,17 @@ export default function Carrousel({apartment}) {//{id,pictures}
 
 
       <div className="left-arrow" onClick={onGoLeft}>
-        <span role="img" aria-label="left">
-          ⬅️
-        </span>
+        <img 
+        src={arrowLeft} 
+        alt="show content" 
+        />
       </div>
 
       <div className="right-arrow" onClick={onGoRight}>
-        <span role="img" aria-label="left">
-          ➡️
-        </span>
+        <img 
+        src={arrowRight} 
+        alt="show content" 
+        />
       </div>
   </div>
   )

@@ -168,7 +168,7 @@ code {
 
 .left-arrow {
   position: absolute;
-  left: 0;
+  left: 20px;
   width: 40px;
   height: 100%;
   display: flex;
@@ -179,7 +179,7 @@ code {
 
 .right-arrow {
   position: absolute;
-  right: 0;
+  right: 20px;
   width: 40px;
   height: 100%;
   display: flex;
@@ -250,6 +250,11 @@ code {
   margin-right: 20px;
 }
 
+.rate-image {
+  width: 30px;
+  height: 30px;
+}
+
 .container-host-picture {
   max-width: 1440px;
   display: flex;
@@ -296,39 +301,115 @@ code {
 }
 
 
+
 /*------------ABOUT-US PAGE----------*/
 
 
 
-.collapse-container {
+/* .collapse-container {
 margin-top : 20px;
 background-color:#F6F6F6;
 width: 582px;
 margin : auto;
 margin-bottom: 20px;
+border-radius: 0 0 10px 10px;
+} */
 
+
+.collapse-button{
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
 }
 
-.collapse-toggle {
+/* .collapse-toggle {
   width: 582px;
   height: 52px;
   color: white;
   font-size: 28px;
   font-family: Montserrat;
   background-color: #FF6060;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
- 
+  
+} */
+
+.arrow_up{
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+.arrow_down{
+  transform: rotate(-180deg);
+  transition: all 0.4s;
 }
 
-.collapse-text {
+/* .collapse-text {
   width: auto;
   height: auto;
   color: #FF6060;
   margin: 10px;
   text-align: justify;
-
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.9s ease-out;
+  box-sizing: border-box;
+} */
+/*----test----*/
+.full {
+  flex: 1;
+ 
 }
+
+.accordion {
+  width: 582px;
+  color: white;
+  font-size: 28px;
+  font-family: Montserrat;
+  background-color: #FF6060;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion .title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background-color: #FF6060;;
+  box-sizing: border-box;
+}
+.accordion .description {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.9s ease-out;
+  box-sizing: border-box;
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 18px;
+ 
+}
+
+.accordion .description .wrapper {
+background-color:#F6F6F6;
+width: 582px;
+margin : auto;
+border-radius: 0 0 10px 10px;
+overflow: hidden;
+box-sizing: border-box;
+ 
+}
+
+.accordion .description .wrapper div {
+  padding: 20px;
+}
+
+.accordion.open .description {
+  grid-template-rows: 1fr;
+}
+/*----test----*/
+
+
 
 
 
