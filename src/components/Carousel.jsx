@@ -6,6 +6,7 @@ import arrowRight from '../assets/Arrow-Right.png'
 export default function Carrousel({apartment}) {//{id,pictures}
 
   const [index, setIndex] = React.useState(0);
+  const length = apartment.pictures.length
 
   const onGoLeft = () => {
     if (index - 1 < 0) {
@@ -41,19 +42,19 @@ export default function Carrousel({apartment}) {//{id,pictures}
       </div>
 
 
-      <div className="left-arrow" onClick={onGoLeft}>
+      {length > 1 && (<div className="left-arrow" onClick={onGoLeft}>
         <img 
         src={arrowLeft} 
         alt="show content" 
         />
-      </div>
+      </div>)}
 
-      <div className="right-arrow" onClick={onGoRight}>
+      {length > 1 && (<div className="right-arrow" onClick={onGoRight}>
         <img 
         src={arrowRight} 
         alt="show content" 
         />
-      </div>
+      </div>)}
   </div>
   )
 }
