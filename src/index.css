@@ -22,7 +22,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 20px 40px 20px;
+  margin: 20px auto;
 }
 
 .menu {
@@ -42,7 +42,7 @@ code {
   
 }
 .banner-header {
-  margin: 40px 20px 40px 20px;
+  margin: 40px auto;
   max-width: 1440px;
   height: 223px;
   background-image: url(./assets/banner-home.jpg);
@@ -65,7 +65,7 @@ code {
   border-radius: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 /*------------CARDS----------*/
@@ -141,8 +141,8 @@ code {
   position: relative;
   margin: auto;
   margin-bottom: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
 .carousel-images {
@@ -198,8 +198,8 @@ code {
   color: rgba(255, 96, 96, 1);
   font-family: Montserrat;
   font-weight: 500;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
+ 
 }
 
 .container-title-location {
@@ -246,8 +246,7 @@ code {
   color: rgba(255, 96, 96, 1);
   font-family: Montserrat;
   font-weight: 500;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px auto;
 }
 
 .rate-image {
@@ -285,16 +284,16 @@ code {
 
 .container-collapse-button {
   max-width: 1440px;
-  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin: 20px auto;
 }
 
 .description-collapse-button{
   width: 582px;
-  height: 52px;
+  /* height: 52px; */
   border-radius: 10px;
   margin-bottom:20px;
 }
@@ -383,7 +382,7 @@ box-sizing: border-box;
 .accordion .description {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.9s ease-out;
+  transition: grid-template-rows 0.4s ease-out;
   box-sizing: border-box;
   color: #FF6060;
   font-family: Montserrat;

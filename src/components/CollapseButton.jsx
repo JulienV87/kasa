@@ -1,36 +1,6 @@
 import React, { useState } from 'react';
 import arrow from '../assets/arrow_up.png'
 
-// export default function CollapseButton({title,description}) {
-//     const [isOpen, setIsOpen] = useState(false);
-    
-
-//     const toggleCollapse = () => {
-//       setIsOpen(!isOpen);
-//     }
-//   return (
-//     <div>
-//        <div className='collapse-container'>
-     
-//         <button className='collapse-toggle' onClick={toggleCollapse}>{title}
-//         <img 
-//         className={`accordion ${isOpen ? 'arrow arrow_up' : 'arrow arrow_down'}`} 
-//         src={arrow} 
-//         alt="show content" 
-//         />
-//       </button>
-        
-//       {isOpen && (
-//         <div className='collapse-text'>
-//           <p>{description}</p>
-//         </div>
-//       )}
-//       </div>
-//     </div>
-//   )
-// }
-
-
 export default function CollapseButton({ title, description }) {
   const [open, setOpen] = React.useState(false);
 
@@ -69,13 +39,3 @@ export default function CollapseButton({ title, description }) {
     </div>
   );
 };
-
-// export default function App() {
-//   const array = ["Climatisation", "Wifi", "Sèche-Cheveux"];
-
-//   return (
-//     <div className="App">
-//       <Accordion title="test" description={array} />
-//     </div>
-//   );
-// }
