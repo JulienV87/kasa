@@ -118,7 +118,6 @@ code {
   border-radius: 10px;
 }
 
-
 .home-cards {
   display: flex;
   justify-content: center;
@@ -166,6 +165,10 @@ code {
   font-size: 18px;
 }
 
+.arrowLefts {
+height: 20px;
+}
+
 .left-arrow {
   position: absolute;
   left: 20px;
@@ -190,15 +193,26 @@ code {
 
 /*------------DESCRIPTION ACCOMODATION----------*/
 
+.test3{
+  max-width: 1440px;
+  margin: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+}
+
 .container-description-accomodation {
   max-width: 1440px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 96, 96, 1);
   font-family: Montserrat;
   font-weight: 500;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* background-color: yellowgreen; */
  
 }
 
@@ -208,6 +222,7 @@ code {
  flex-direction: column;
  justify-content: left;
  align-items: start;
+ margin-bottom: 20px;
 }
 
 .accomodation-title {
@@ -240,13 +255,13 @@ code {
 .container-tags-rates {
   max-width: 1440px;
   margin-top: 30px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 96, 96, 1);
   font-family: Montserrat;
   font-weight: 500;
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 
 .rate-image {
@@ -261,10 +276,12 @@ code {
   gap: 20px;
 }
 
-.container-tags-rate{
+
+.container-tags-rates{
   max-width: 1440px;
   display: flex;
-  justify-content: space-between;             
+  flex-direction: column;
+  justify-content: space-between;            
 }
 
 .host-picture {
@@ -275,8 +292,8 @@ code {
 }
 
 .host-picture img {
-  width: 100%;
-  height: auto;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   object-fit: contain;
   margin: auto;
@@ -299,20 +316,7 @@ code {
 }
 
 
-
 /*------------ABOUT-US PAGE----------*/
-
-
-
-/* .collapse-container {
-margin-top : 20px;
-background-color:#F6F6F6;
-width: 582px;
-margin : auto;
-margin-bottom: 20px;
-border-radius: 0 0 10px 10px;
-} */
-
 
 .collapse-button{
 display: flex;
@@ -320,18 +324,6 @@ justify-content: space-between;
 align-items: center;
 box-sizing: border-box;
 }
-
-/* .collapse-toggle {
-  width: 582px;
-  height: 52px;
-  color: white;
-  font-size: 28px;
-  font-family: Montserrat;
-  background-color: #FF6060;
-  border-radius: 10px;
-  border: none;
-  
-} */
 
 .arrow_up{
   transform: rotate(0deg);
@@ -342,25 +334,12 @@ box-sizing: border-box;
   transition: all 0.4s;
 }
 
-/* .collapse-text {
-  width: auto;
-  height: auto;
-  color: #FF6060;
-  margin: 10px;
-  text-align: justify;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.9s ease-out;
-  box-sizing: border-box;
-} */
-/*----test----*/
 .full {
   flex: 1;
- 
 }
 
 .accordion {
-  max-width: 1023px;
+  max-width: 1150px;
   color: white;
   font-size: 28px;
   font-family: Montserrat;
@@ -368,14 +347,14 @@ box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .accordion .title {
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 5px;
+  padding: 10px;
   background-color: #FF6060;;
   box-sizing: border-box;
 }
@@ -387,17 +366,14 @@ box-sizing: border-box;
   color: #FF6060;
   font-family: Montserrat;
   font-size: 18px;
-
 }
 
 .accordion .description .wrapper {
 background-color:#F6F6F6;
-/* width: 1023px; */
 margin : auto;
 border-radius: 0 0 10px 10px;
 overflow: hidden;
 box-sizing: border-box;
- 
 }
 
 .accordion .description .wrapper div {
@@ -408,11 +384,6 @@ box-sizing: border-box;
 .accordion.open .description {
   grid-template-rows: 1fr;
 }
-/*----test----*/
-
-
-
-
 
 
 /*-----------ERROR PAGE------------*/
@@ -468,3 +439,34 @@ color:white;
 size: 100px;
 }
 
+/*MOBILE*/
+
+@media screen and (max-width: 767px) {
+  .container-tags-rates{
+    width: 100%;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+               
+  }
+  .accordion .description .wrapper div {
+    min-width: 370px;
+    padding: 20px;
+}
+
+.arrowLeft {
+  height: 40px;
+  }
+
+.arrowRight {
+  height: 40px;
+  }
+
+.logo {
+  height: 40px;
+}
+
+.menu {
+  font-size: 15px;
+}
+}

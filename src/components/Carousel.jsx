@@ -46,6 +46,7 @@ export default function Carrousel({apartment}) {//{id,pictures}
         <img 
         src={arrowLeft} 
         alt="show content" 
+        className='arrowLeft'
         />
       </div>)}
 
@@ -53,6 +54,7 @@ export default function Carrousel({apartment}) {//{id,pictures}
         <img 
         src={arrowRight} 
         alt="show content" 
+        className='arrowRight'
         />
       </div>)}
   </div>
